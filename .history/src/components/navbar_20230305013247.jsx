@@ -5,15 +5,12 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assests/logo.png'
 import {Link} from 'react-scroll'
 
-const Resume_url = 'http://Esther-Kamau.github.io/Z-to-M/design_resume.pdf'
+const Resume_url = 'http://Esther-Kamau.github.io/Z-to-M/design_resume'
 const Navbar = () => {
     const [nav, SetNav] = useState(false)
     const handleClick = () => SetNav(!nav)
     const downloadFileAtURL = (url) =>{
-  
-     const aTag =document.createElement('a')
-     aTag.href=url
-     aTag.setAttribute('download', '')
+
     }
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
@@ -83,7 +80,7 @@ const Navbar = () => {
             </a>
     </li>
     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[rgba(6,175,3,0.2)] '>
-        <a onClick={() =>{downloadFileAtURL(Resume_url)}} className='flex justify-between items-center w-full text-gray-300' href='/'>
+        <a onClick={() =>{downloadFileAtURL}} className='flex justify-between items-center w-full text-gray-300' href='/'>
            Resume <BsFillPersonLinesFill size={30}/>
             </a>
     </li>

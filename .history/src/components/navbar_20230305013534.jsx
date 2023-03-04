@@ -10,10 +10,8 @@ const Navbar = () => {
     const [nav, SetNav] = useState(false)
     const handleClick = () => SetNav(!nav)
     const downloadFileAtURL = (url) =>{
-  
      const aTag =document.createElement('a')
-     aTag.href=url
-     aTag.setAttribute('download', '')
+     aTag.href=ur
     }
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
